@@ -7,7 +7,7 @@ def Opening_Browser():
     sleep(6) #Depending on your internet speed you can adjust it 
 
 def RaceAsGuest():
-    driver.find_element_by_xpath('/html/body/div/div/main/div[1]/div[1]/div/div/div/div/div[1]/a').click()
+    driver.find_element_by_xpath('//*[text()="Race as a Guest"]').click() #Race as Guest
     sleep(3)
 
 Opening_Browser()
