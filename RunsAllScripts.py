@@ -14,10 +14,10 @@ def RaceAsGuest(driver):
     sleep(3)
 def RaceAgain(driver):
     try:
-        driver.find_element_by_css_selector('.btn--gloss')
+        driver.find_element_by_css_selector('.btn--gloss').click()
     except:
         try:
-            driver.find_element_by_xpath('//button[text()="Race Again"]')
+            driver.find_element_by_xpath('//button[text()="Race Again"]').click()
         except:
             pass
 OpenBrowser.Opening_Browser()
